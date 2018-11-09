@@ -1,0 +1,17 @@
+Adrian Sledziewski
+Egor Semeniac
+Egor Gusav
+Alex Braverman
+Muhammad Khalil
+
+To enable the cashier to collaborate with the baker directly 
+
+we added a private Baker field to the Cashier class at line 17 as well as altered the constructor
+
+for the Cashier class at line 23 to take a second parameter: a Baker object.
+
+At line 59 we changed what happens if the inventory is too low to fulfill an order.
+
+Instead of printing out an error, Cashier is now directly able to collaborate with Baker and call
+
+the bake method of the Baker class.

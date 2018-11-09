@@ -1,0 +1,34 @@
+Adrian Sledziewski
+Egor Semeniac
+Egor Gusav
+Alex Braverman
+Muhammad Khalil
+
+To make the Bakery more flexible and able to sell more than cakes ad muffins,
+
+we first removed the cakePrice and muffinePrice fields from the StoreOwner class and the cakeCount and muffinCount fields from the Inventory class.
+
+They are replaced with two HashMaps in the Invemtory class. inventoryMap and priceMap have a String as the key, the food item, 
+
+and as values they have the number of that particular food item in stock and the price of that food item, respectively.
+
+From here, we had to add new methods and change many of the existing ones of the StoreOwner class.
+
+Since the HashMaps are private fields of the Inventory class, the implementation of many of the methods are collaborations with the Inventory class.
+
+addToMenu is a new method that takes a String parameter and adds the new menu item to both HashMaps.
+
+getCakePrice and getMuffinPrice have been consolidated into getPrice.
+
+setCakePrice and setMuffinPrice have been consolidated into setPrice.
+
+getCakeCount and getMuffinCount have been consolidated into getCount.
+
+addCakesToInventory and addMuffinsToInventory have been consolidated into addToInventory.
+
+removeCakesFromInventory and removeMuffinsFromInventory have been consolidated into subtractFromInventory.
+
+With these changes the Bakery better adheres to the Open-Closed Principle by enabling the Bakery to sell a wider variety of items in the future.
+
+
+

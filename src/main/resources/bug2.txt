@@ -1,0 +1,13 @@
+Adrian Sledziewski
+Egor Semeniac
+Egor Gusav
+Alex Braverman
+Muhammad Khalil
+
+To fix that no money ends up in CashRegister, we added code to Cashier.java.  
+
+In the provideService method, after it is determined that the customer has enough money in their wallet and that there is enough inventory to fulfill the order,
+
+at like 69 we call the payCashier method of the customer class. 
+
+We subsequently call the recievePayment method of the cashier class at line 71.
